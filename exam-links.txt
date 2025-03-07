@@ -1,0 +1,3 @@
+enlace trello: https://trello.com/invite/b/67c65afc73e74785b10be968/ATTI423fb1b36dba1a8778cec7a9cf06310cF28519D1/problematica-aplicacion-movil-para-la-gestion-y-control-de-vuelos
+enlace figma:https://www.figma.com/design/yBToldcdtd6AYWDbCeZTmi/Untitled?node-id=1-47&t=c2pKwpsEJzUaOsUs-1
+enlace repositorio GitHub: https://github.com/SergioAndres17/programacion-movil-2025-a-g1/tree/feature/exam-c1
