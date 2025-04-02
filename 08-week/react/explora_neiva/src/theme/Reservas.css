@@ -1,0 +1,108 @@
+/* ✅ Estilos del encabezado */
+.nav-toolbar {
+    background-color: #A3E4F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    min-height: 50px;
+    position: relative;
+}
+
+/* 🌟 Contenedor de botones: Ajustado para que los botones estén más unidos */
+.nav-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0px; /* 🔹 Reduce el espacio entre botones */
+}
+
+/* 🌟 Estilos de los botones de navegación */
+.nav-button {
+    color: #004466;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin: 0;
+    padding: 3px 8px; /* 🔹 Reduce el padding para acercar los botones */
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    border-radius: 0; /* 🔹 Evita bordes redondeados entre botones */
+}
+
+.nav-button:hover {
+    color: #007BFF;
+}
+
+.nav-button.active {
+    border-bottom: 2px solid #007BFF;
+}
+
+/* 🔹 Estilos para el botón de login */
+.login {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre el icono y el texto */
+    background-color: transparent;
+    border: none;
+    color: #004466;
+    font-weight: bold;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    padding: 5px 8px;
+}
+
+/* 📌 Icono en el botón de login */
+.login-icon {
+    font-size: 22px;
+    color: #004466;
+}
+
+/* 📌 Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    .nav-toolbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 4px 0;
+    }
+
+    .nav-buttons {
+        overflow-x: auto;
+        gap: 0px; /* 🔹 Elimina espacio entre botones */
+    }
+
+    .nav-button {
+        font-size: 0.8rem;
+        padding: 2px 6px; /* 🔹 Reduce padding en pantallas pequeñas */
+    }
+
+    .login {
+        gap: 3px;
+    }
+}
+
+/* 📌 Ajustes para pantallas más pequeñas */
+@media screen and (max-width: 480px) {
+    .nav-toolbar {
+        padding: 3px;
+    }
+
+    .nav-buttons {
+        gap: 0px;
+    }
+
+    .nav-button {
+        font-size: 0.65rem;
+        padding: 2px 0px;
+    }
+
+    .login {
+        font-size: 0.65rem;
+    }
+
+    .login-icon {
+        font-size: 20px;
+    }
+}

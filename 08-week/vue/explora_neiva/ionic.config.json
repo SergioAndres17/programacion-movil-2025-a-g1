@@ -1,0 +1,7 @@
+{
+  "name": "explora_neiva",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}

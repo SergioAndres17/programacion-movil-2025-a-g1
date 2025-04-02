@@ -1,0 +1,87 @@
+<ion-content>
+  <!-- Encabezado -->
+  <ion-header>
+    <ion-toolbar>
+      
+      <ion-buttons slot="end">
+        <ion-button>INICIO</ion-button>
+        <ion-button>DESTINO</ion-button>
+        <ion-button>RESERVAS</ion-button>
+        <ion-button>CONTACTO</ion-button>
+        <ion-button>INICIAR SESIÓN</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Formulario de Búsqueda -->
+  <div class="search-form ion-padding">
+    <form>
+      <ion-item>
+        <ion-label position="floating">Nombre del hotel</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Seleccione la fecha</ion-label>
+        <ion-datetime placeholder="Elige la fecha"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating"></ion-label>
+        <ion-select placeholder="Seleccionar">
+          <ion-select-option value="1">1 Persona</ion-select-option>
+          <ion-select-option value="2">2 Personas</ion-select-option>
+          <ion-select-option value="3">3 Personas</ion-select-option>
+          <ion-select-option value="4">4 Personas</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-button expand="full" color="primary">BUSCAR</ion-button>
+    </form>
+  </div>
+
+  <!-- Listado de Hoteles -->
+  <div class="hotel-listings">
+    <!-- Primer Hotel -->
+    <ion-card>
+      <!-- Imagen del hotel -->
+      <ion-img src="src/assets/icon/casa_hotel_mi_huila.jpg"></ion-img> <!-- Imagen 1 -->
+      <ion-card-header>
+        <ion-card-title>Casa Hotel Mi Huila</ion-card-title>
+        <ion-card-subtitle>Ubicado en Neiva</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button color="primary" expand="full">RESERVAR</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Segundo Hotel -->
+    <ion-card>
+      <!-- Imagen del hotel -->
+      <ion-img src="/src/assets/icon/hotel_escorial_neiva.jpg"></ion-img> <!-- Imagen 2 -->
+      <ion-card-header>
+        <ion-card-title>Hotel Escorial Neiva</ion-card-title>
+        <ion-card-subtitle>Aire acondicionado y terraza</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Perfecto para disfrutar del paisaje.</p>
+        <ion-button color="primary" expand="full">RESERVAR</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Tercer Hotel -->
+    <ion-card>
+      <!-- Imagen del hotel -->
+      <ion-img src="/src/assets/icon/ghl_hotel_neiva.jpg"></ion-img> <!-- Imagen 3 -->
+      <ion-card-header>
+        <ion-card-title>Hotel Boutique San Pedro</ion-card-title>
+        <ion-card-subtitle>Experiencia de lujo en el centro de Neiva</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Ideal para escapadas románticas.</p>
+        <ion-button color="primary" expand="full">RESERVAR</ion-button>
+        <ion-button color="secondary" expand="full">VER MÁS</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
